@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f3f3f3;
+    }
+    h1 {
+      color: purple;
+      text-align: center;
+    }
+
+    input {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 7px;
+    }
+    .inpt {
+      width: 80%;
+      flex-grow: 1;
+    }
+    a {
+      color: purple;
+    }
+  </style>
+  <body>
+    <form
+      action=""
+      style="
+        margin: auto;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+
+        padding: 10px;
+        background-color: rgb(223, 223, 255);
+      "
+    >
+      <h1>Login Here</h1>
+      <input
+        type="text"
+        name="uname"
+        id="uname"
+        placeholder="Enter Username"
+        class="inpt"
+      />
+      <input
+        type="password"
+        name="passwd"
+        id="passwd"
+        placeholder="Enter Password"
+        class="inpt"
+      />
+
+      <input type="submit" value="Submit" style="width: 50%" />
+      <input type="button" value="Reset" style="width: 50%" />
+      <div>
+        <a href="###">Forgot password</a>|
+        <a href="registration.html">Sign Up Here</a>
+      </div>
+    </form>
+  </body>
+</html>

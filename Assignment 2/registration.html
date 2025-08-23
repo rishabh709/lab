@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <style>
+    h2 {
+      background-color: rgb(185, 185, 255);
+      border-radius: 2px;
+      padding: 5px;
+    }
+    body {
+      border-radius: 7px;
+      background-color: #f3f3f3;
+      font-family: sans-serif;
+    }
+    .req:after {
+      content: " *";
+      color: red;
+    }
+  </style>
+  <body>
+    <h1 style="font-size: 20px; color: purple; text-align: center">
+      STUDENT REGISTRATION FORM
+    </h1>
+
+    <div>
+      <form
+        action=""
+        style="
+          /* display: flex; justify-content: space-between; flex-direction: column; */
+
+          background-color: rgb(223, 223, 255);
+          border-radius: 7px;
+          padding: 10px;
+          display: grid;
+          row-gap: 10px;
+        "
+      >
+        <h2>Basic Information</h2>
+        <div
+          class="name"
+          style="
+            display: grid;
+            grid-template-columns: 200px 200px auto 1fr auto 1fr;
+            column-gap: 50px;
+          "
+        >
+          <label class="req" for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" required />
+
+          <label for="middleName">Middle Name</label>
+          <input type="text" name="middleName" id="middleName" />
+
+          <label class="req" for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" required />
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 200px 200px;
+            column-gap: 50px;
+            row-gap: 5px;
+          "
+        >
+          <label class="req" for="rollNo">Roll No. </label>
+          <input type="text" name="rollNo" id="rollNo" required />
+
+          <label class="req" for="emailId">Email ID</label>
+          <input type="email" name="emailId" id="emailId" required />
+
+          <label class="req" for="phoneNo">Phone No.</label>
+          <input type="number" name="phoneNo" id="phoneNo" required />
+
+          <label class="req" for="userId">User ID</label>
+          <input type="text" name="userId" id="userId" required />
+
+          <label class="req" for="passwd">Password</label>
+          <input type="password" name="passwd" id="passwd" required />
+
+          <label class="req" for="passwd">Re-Enter Password</label>
+          <input type="password" name="passwd" id="passwd" required />
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 200px 1fr 1fr 1fr;
+            column-gap: 50px;
+          "
+        >
+          <label class="req" for="branch">Branch</label>
+          <select name="branch" id="branch">
+            <option value="CSE">CSE</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Metalergy">Metalergy</option>
+            <option value="Mecatronics">Mecatronics</option>
+          </select>
+
+          <label class="req" for="year">Year of Studying</label>
+          <select name="year" id="year">
+            <option value="1st">1st</option>
+            <option value="2nd">2nd</option>
+          </select>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 200px 200px;
+            column-gap: 50px;
+          "
+        >
+          <label class="req" for="photo">Upload Photo</label>
+          <input type="file" name="photo" id="photo" />
+        </div>
+
+        <h2>Personal Details</h2>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            column-gap: 50px;
+            row-gap: 10px;
+          "
+        >
+          <label class="req" for="fatherName">Father Name</label>
+          <input type="text" name="fatherName" id="fatherName" required />
+
+          <label class="req" for="fatherContact">Contact</label>
+          <input type="tel" name="fatherContact" id="fatherContact" required />
+
+          <label class="req" for="motherName">Mother Name</label>
+          <input type="text" name="motherName" id="motherName" required />
+
+          <label class="req" for="motherContact">Contact</label>
+          <input type="tel" name="motherContact" id="motherContact" required />
+
+          <label class="req" for="DOB">Date of Birth</label>
+          <input type="date" name="DOB" id="DOB" />
+
+          <label class="req" for="adhaarNo">Adhaar No.</label>
+          <input type="text" name="adhaarNo" id="adhaarNo" required />
+        </div>
+
+        <h2>Address</h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 200px auto;
+            column-gap: 50px;
+            row-gap: 10px;
+          "
+        >
+          <label class="req" for="address1">Address1</label>
+          <textarea name="address1" id="address1" required></textarea>
+
+          <label for="address2">Address2</label>
+          <textarea name="address2" id="address2"></textarea>
+        </div>
+        <div style="text-align: center">
+          <input type="button" value="Register" />
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
